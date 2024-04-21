@@ -1,0 +1,25 @@
+.faq-image-wrapper {
+    height: 400px;
+    position: relative;
+}
+
+.faq-content {
+    width: 73%;
+    background-color: #fff;
+    position: absolute;
+    padding: 50px 100px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.faq-image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+.article-content .accordion {
+    box-shadow: 0 15px 34px 0 rgba(175, 181, 204, 0.32);
+    padding: 50px 120px;
+}
+.article-content .accordion-item button{
+    font-size: 18px !important;
+}

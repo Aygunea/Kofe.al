@@ -1,0 +1,47 @@
+.creators-image-wrapper {
+    background: linear-gradient(90deg, #B2BFF9, #E5CEF8) !important;
+    min-height: 450px;
+}
+
+.creators-image-wrapper::after {
+    background: linear-gradient(white 0%, rgba(255, 255, 255, 0.1) 100%)
+}
+.badge{
+    display: flex;
+    align-items: center;
+    background: rgba(226, 213, 252, .8);
+    box-shadow: 0 12px 22px 0 rgba(214, 191, 242, .28);
+    padding: 0 20px;
+    border: 1px solid #fff;
+    border-radius: 500px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    justify-content: center;
+    width: max-content;
+}
+.creators-content{
+    padding: 60px 100px;
+    border-radius: 8px;
+    bottom: -40px;
+    width: 90%;
+}
+.creators-content input{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid #eaeaea;
+    width: 100%;
+    padding: 9px 20px;
+    border-left: none;
+}
+.creators-btn{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #eaeaea;
+    border-right: none;
+    padding: 9px 20px;
+    width: 20%;
+
+}

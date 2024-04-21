@@ -1,0 +1,41 @@
+.onlineshop .split-inner{
+    padding-left: 80px;
+}
+.onlineshop{
+    position: relative;
+    background-color: #F9F9FF;
+    height: 150vh;
+}
+.plan-offer-list li{
+    line-height: 36px;
+}
+.plan-offer-list span{
+    background: #2f57ef21 !important;
+    color: #2f57ef !important;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+.top-circle-shape{
+    position: absolute;
+    width: 240px;
+    top: 96px;
+    height: 240px;
+    left: -96px;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, #CFA2E8, #637FEA);
+    opacity: .09;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.top-circle-shape::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    border-radius: 100%;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    left: 30px;
+    top: 30px;
+}

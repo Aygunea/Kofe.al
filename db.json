@@ -1,0 +1,256 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "image": "https://kofe.al/storage/images/users/65c8c6ed8d403.jpeg",
+      "title": "Vüsal Vəliyev",
+      "subtitle": "TikTok-da oyun yayınları açarağ tanınan biri.",
+      "supporter": 112,
+      "globe": true,
+      "category":"sosialmedia"
+    },
+    {
+      "id": "2",
+      "image": "https://kofe.al/storage/images/users/64c57374916c4.jpg",
+      "title": "Anar Aliyev",
+      "subtitle": "Urban blogger",
+      "supporter": 112,
+      "facebook": true,
+      "instagram": true,
+      "tiktok": true,
+      "telegram": true,
+      "youtube": true,
+      "globe": true,
+      "category":"video-yaradiciliq"
+    },
+    {
+      "id": "3",
+      "image": "https://kofe.al/storage/images/users/661c41a60c7ef.jpg",
+      "title": "Zekraen",
+      "subtitle": "Tiktok Oyun Yayincisi",
+      "supporter": 24,
+      "globe": true,
+      "category":"sosialmedia"
+    },
+    {
+      "id": "4",
+      "image": "https://kofe.al/storage/images/users/64cd3091e8246.png",
+      "title": "Türkan İsmayıllı",
+      "subtitle": "Autizm sindromlu uşaqlar üçün Animasiya kanalı",
+      "supporter": 22,
+      "instagram": true,
+      "youtube": true,
+      "globe": true,
+      "category":"video-yaradiciliq"
+    },
+    {
+      "id": "5",
+      "image": "https://kofe.al/storage/images/users/65ae11e001a4d.jpg",
+      "title": "Shahin Khalilov",
+      "subtitle": "AI, Motion graphics",
+      "supporter": 1,
+      "instagram": true,
+      "globe": true,
+      "category":"incesenet"
+    },
+    {
+      "id": "6",
+      "image": "https://kofe.al/storage/images/users/65c8be5ac54ee.jpeg",
+      "title": "Elton Zəkəriyəyev",
+      "subtitle": "TikTok-da oyun yayınları açarağ tanınan biri.",
+      "supporter": 27,
+      "globe": true,
+      "category":"sosialmedia"
+    },
+    {
+      "id": "7",
+      "image": "https://kofe.al/storage/images/users/D5EiUEWH68Cts3WCCe5VhzuJYqU09LpfKvAuiBAA.jpg",
+      "title": "Couple traveller influencer",
+      "subtitle": "Evsiz Səyyahlar",
+      "supporter": 54,
+      "instagram": true,
+      "youtube": true,
+      "globe": true,
+      "category":"blog"
+    },
+    {
+      "id": "8",
+      "image": "https://kofe.al/storage/images/users/661d02d64e4da.png",
+      "title": "ChessBornTV",
+      "subtitle": "Şahmat",
+      "supporter": 2,
+      "facebook": true,
+      "instagram": true,
+      "tiktok": true,
+      "telegram": true,
+      "youtube": true,
+      "globe": true,
+      "category":"idman"
+    },
+    {
+      "id": "9",
+      "image": "https://kofe.al/storage/images/users/65ed42876d3f9.jpeg",
+      "title": "Sabir Memmedov",
+      "subtitle": "Yayınçı",
+      "supporter": 65,
+      "tiktok": true,
+      "youtube": true,
+      "globe": true,
+      "category":"streaming"
+    },
+    {
+      "id": "10",
+      "image": "https://kofe.al/storage/images/users/65ccf94fe2693.jpg",
+      "title": "gagaonline",
+      "subtitle": "Yayımcı",
+      "supporter": 19,
+      "tiktok": true,
+      "globe": true,
+      "category":"streaming"
+    },
+    {
+      "id": "11",
+      "image": "https://kofe.al/storage/images/users/PB1k4N6VgLYzY5utsTukVfjJyDSgyotkijP0f9ED.jpg",
+      "title": "Rustam Mammadov",
+      "subtitle": "Strimer",
+      "supporter": 3,
+      "tiktok": true,
+      "telegram": true,
+      "youtube": true,
+      "globe": true,
+      "category":"streaming"
+    },
+    {
+      "id": "12",
+      "image": "https://kofe.al/storage/images/users/661ce13b7bb71.png",
+      "title": "Cabrayil Cabrayilli",
+      "subtitle": "youtuber",
+      "supporter": 1,
+      "globe": true,
+      "category":"sosialmedia"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "image": "https://kofe.al/storage/images/users_posts/GYFWrJZ7AI3XR9IJ8Hr2EROIPylZi949CYCHwGOw.jpg",
+      "title": "Bundan sonra daha effektiv yazacaqsan!",
+      "description": "Adətən mətn yazarkən diqqətdən qaçırdığımız bir sıra məqamlar olur. Onun strukturu, vermək istədiyimiz mesajın zamanlaması və forması çox vaxt oxucunu",
+      "creator": "Avaz Cafarov",
+      "time": "20.04.2024",
+      "readtime":5,
+      "review": 0,
+      "creatorimg": "https://kofe.al/storage/images/users/660d16bccc08c.png",
+      "blog":0
+    },
+    {
+      "id": "2",
+      "image": "https://kofe.al/storage/images/users_posts/SM8S3Zgsh6TXX7XqfKdn3AXiPyJ3F2MC67ptRdeh.jpg",
+      "title": "“Uğur hekayəm”",
+      "description": "“Bir Fincan Çay”",
+      "creator": "Günel İsmayılova",
+      "time": "20.04.2024",
+      "readtime":3,
+      "review": 18,
+      "creatorimg":"https://kofe.al/storage/images/users/6622cc5fe5473.jpeg",
+      "blog":0
+    },
+    {
+      "id": "3",
+      "image": "https://kofe.al/storage/images/users_posts/T4V7vyyfmToenzeByo58EVP5xqp3j9C0eXQGkyPS.jpg",
+      "title": "Worldef Istanbul tədbirinə ÖDƏNİŞSİZ Bilet",
+      "description": "Worldef Istanbul iştirak etmək istəyən şəxslər üçün ödənişsiz bilet əldə etmək istəyənlər üçün şans",
+      "creator": "ECOM AZ",
+      "time": "19.04.2024",
+      "readtime":1,
+      "review": 2,
+      "creatorimg":"https://kofe.al/storage/images/users/65eee58a3047d.png",
+      "blog":0
+    },
+    {
+      "id": "4",
+      "image": "https://kofe.al/storage/images/users_posts/nnjA4vCkIqCfe4eFz9YfBmtLBBklf8RLbI3aJzBd.jpg",
+      "title": "Nəbi Xəzri -'Ürək'",
+      "description": "Nəbi Xəzrinin - Ürək şeiri ilə tanış olaq",
+      "creator": "Tofiq Vəliyev",
+      "time": "18.04.2024",
+      "readtime":1,
+      "review": 12,
+      "creatorimg":"https://kofe.al/storage/images/users/66213004c6fca.jpeg",
+      "blog":0
+    },
+    {
+      "id": "5",
+      "image": "https://kofe.al/storage/images/users_posts/DF02PRxTsz8X43wenQuZPv9TEeMHFnSDB8zydz2k.jpg",
+      "title": "Instagramda aktivlik saatı yalanı.",
+      "description": "Instagramda və digər sosial şəbəkələrdə izləyicilərinizin aktivlik saatına əsasən paylaşım etməniz yaxşıdır. Amma belə bir xüsusi qanunauyğunluq varmı",
+      "creator": "Avaz Cafarov",
+      "time": "17.04.2024",
+      "readtime":1,
+      "review": 8,
+      "creatorimg": "https://kofe.al/storage/images/users/660d16bccc08c.png",
+      "blog":0
+    },
+    {
+      "id": "6",
+      "image": "https://kofe.al/storage/images/users_posts/ge6z2DesXdhRLiYqeyTUQvT1lQqGByUjTXqsS7Ts.png",
+      "title": "'Qoğal uşaq mahnısı' (Qoğal nağılından) - Azərbaycan uşaq mahnıları",
+      "description": "Qoğalın nağılında, hər kəsdən qaçan qoğalın oxuduğu mahnı.",
+      "creator": "Ulduzlu Yol",
+      "time": "17.04.2024",
+      "readtime":1,
+      "review": 5,
+      "creatorimg":"https://kofe.al/storage/images/users/65b8a574a0419.png",
+      "video":"https://www.youtube.com/embed/37ZP4TKRNS8?si=GUk1wDRWyk3c7R-U",
+      "blog":0
+    },
+    {
+      "id": "7",
+      "image": "https://kofe.al/storage/images/users_posts/1wtFgyIKxPvorJtbX9LwMvG2gCZMHASwFSXKBwt1.jpg",
+      "title": "Kassir Qızın Təbəssümü",
+      "description": "İntibah dövründə portret duruşları üçün namizəd olacaq bu xanım, kofe evində kassa arxasında durur. Kassa ətrafı artıq Florensiya kimi bir yerdir. Cavid gözlərini bir qədər başqa istiqamətə çevirməli olur. Bunu etmək zərurəti duyur.",
+      "creator": "Coşqun Kərimov",
+      "time": "17.04.2024",
+      "readtime":5,
+      "review": 21,
+      "creatorimg":"https://kofe.al/storage/images/users/2dAmTE8pUqhCV5IDB0a86ZobpTR9PhUHKV4qG3dJ.jpg",
+      "blog":1
+    },
+    {
+      "id": "8",
+      "image": "https://kofe.al/storage/images/users_posts/ki8myVKIHvfJIFM0jyrwCBcMRFTuNMqy9oKdTXgO.jpg",
+      "title": "Təyyarənin Apardığı Yer",
+      "description": "Sadəcə bir gün doğma insana çevrilməyə bəs edirmi? Sadəcə bir təcrübə sizi bir-birinizə həyatınızın sonuna kimi bağlamağa kifayət edirmi?",
+      "creator": "Coşqun Kərimov",
+      "time": "17.04.2024",
+      "readtime":6,
+      "review": 24,
+      "creatorimg":"https://kofe.al/storage/images/users/2dAmTE8pUqhCV5IDB0a86ZobpTR9PhUHKV4qG3dJ.jpg",
+      "blog":2
+    },
+    {
+      "id": "9",
+      "image": "https://kofe.al/storage/images/users_posts/ax69iwr4r2mgvbCjmD3X5AIY2khndu6KYQafHbld.jpg",
+      "title": "Mənim adım SEİKO-dur.",
+      "description": "Adımı ALDOdan eşitmiş ola bilərsiz. Xəbərim olmadan mənim barəmdə sizə nəsə deyib. Xasiyyəti belədir. Danışmağı çox sevir. Mən bir qədər fərqliyəm. Başımı aşağı salıb işləməyi sevirəm. Mənim üçün hərəkət həyatdır.",
+      "creator": "Coşqun Kərimov",
+      "time": "17.04.2024",
+      "readtime":8,
+      "review": 11,
+      "creatorimg":"https://kofe.al/storage/images/users/2dAmTE8pUqhCV5IDB0a86ZobpTR9PhUHKV4qG3dJ.jpg",
+      "blog":2
+    },
+    {
+      "id": "10",
+      "image": "https://kofe.al/storage/images/users_posts/bLgLutXAcx3fpI8zyKODg8aBamsSUeJ1hSaluijD.jpg",
+      "title": "Rəssam Aşının Ətri",
+      "description": "Rəsm sərgisi mətbəxlə əvəz edildi. Həmin mətbəx yarımçıq qalmış arzuların qərargahına çevrildi. Qablar artdıqca xəyallar və onlara çatmaq arzuları azalırdı.",
+      "creator": "Coşqun Kərimov",
+      "time": "17.04.2024",
+      "readtime":10,
+      "review": 7,
+      "creatorimg":"https://kofe.al/storage/images/users/2dAmTE8pUqhCV5IDB0a86ZobpTR9PhUHKV4qG3dJ.jpg",
+      "blog":2
+    }
+  ]
+}
