@@ -5,12 +5,10 @@ import { fetchUsers } from '../../Slice/UsersSlice';
 
 const UsersArea = () => {
     const dispatch = useDispatch();
-
     const filteredUsers = useSelector(state => state.users.items);
-    console.log(filteredUsers);
     useEffect(() => {
         dispatch(fetchUsers());
-      }, [dispatch]);
+    }, [dispatch]);
     return (
         <div>
             <div id='section-title' className="text-center py-8">

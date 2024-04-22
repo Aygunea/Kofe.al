@@ -1,6 +1,6 @@
 import React from 'react'
 import './categoryarea.css'
-import { IoMdArrowRoundForward } from "react-icons/io";
+import { NavLink } from 'react-router-dom';
 
 const CategoryArea = () => {
     let thumbnail = [
@@ -15,21 +15,23 @@ const CategoryArea = () => {
     ]
     return (
         <div className='container-x'>
-            <div className="categoryarea grid gap-x-8 gap-y-8 grid-cols-4">
+            <div className="categoryarea grid gap-x-8 gap-y-8 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {thumbnail.map((item, index) => (
-                    <div className='inner rounded-lg' key={index}>
-                        <div className="thumbnail">
-                            <img className="rounded-lg" src={item.image} alt="" />
-                        </div>
-                        <div className="content flex flex-col justify-center items-center text-white font-bold">
-                            <div>{item.title}</div>
-                            <div className='read-more-btn flex justify-center items-center'>
-                                {item.yaradici}
-                                <span>Yaradıcı</span>
-                                <IoMdArrowRoundForward />
+                    <NavLink to="/creators" key={index}>
+                        <div className='inner rounded-lg'>
+                            <div className="thumbnail">
+                                <img className="rounded-lg" src={item.image} alt="" />
+                            </div>
+                            <div className="content flex flex-col justify-center items-center text-white font-bold">
+                                <div>{item.title}</div>
+                                <div className='read-more-btn flex justify-center items-center'>
+                                    {/* {item.yaradici}
+                                    <span>Yaradıcı</span>
+                                    <IoMdArrowRoundForward /> */}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
         </div>

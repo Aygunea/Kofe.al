@@ -6,18 +6,26 @@ import { IoTimeOutline } from "react-icons/io5";
 import { CiFilter } from "react-icons/ci";
 import { IoSearch } from "react-icons/io5";
 import { LuMoveRight } from "react-icons/lu";
-import './style.css'
 import { NavLink } from 'react-router-dom';
+import { setSearchText, filterItems } from '../../Slice/FilterSlice';
+import './style.css'
 
 const Blogs = () => {
   let dispatch = useDispatch()
   let blogs = useSelector(state => state.blogs.items)
+  const searchText = useSelector(state => state.filter.searchText);
+  const filteredBlogs = useSelector(state => state.filter.filteredItems);
+
   useEffect(() => {
     dispatch(fetchBlogs())
   }, [dispatch])
+
+  useEffect(() => {
+    dispatch(filterItems({ searchText, items: blogs }));
+  }, [dispatch, searchText, blogs]);
+
   const blog1 = blogs.filter(item => item.blog === 1)
   const blog2 = blogs.filter(item => item.blog === 2)
-  const blog0 = blogs.filter(item => item.blog === 0)
 
   return (
     <div className="blogs section-gap">
@@ -69,7 +77,8 @@ const Blogs = () => {
           </div>
           <div className='flex gap-2 justify-end'>
             <div className="search-input relative flex">
-              <input className='blog-input' placeholder='Axtarış...' type="text" />
+              <input className='blog-input' placeholder='Axtarış...' value={searchText} // Bind input value to search text
+                onChange={(e) => dispatch(setSearchText(e.target.value))} type="text" />
               <div className='search flex items-center heading text-lg justify-center'>
                 <IoSearch />
               </div>
@@ -81,29 +90,30 @@ const Blogs = () => {
           </div>
         </div>
         <div className='grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 '>
-          {blog0 && blog0.map((item, index) => (
-            <NavLink to={`/blogs/${item.id}`} key={index}>
-              <div className='blog flex flex-col bg-white rounded-md' key={index}>
-                <div className="blog-image rounded-md">
-                  <img src={item.image} alt="" />
-                </div>
-                <div className="card-body flex flex-col gap-3 px-6 py-7">
-                  <h1 className='heading font-bold text-xl'>{item.title}</h1>
-                  <p className='font-lg'>{item.description}</p>
-                  <div className='flex gap-2 items-center'>
-                    <img className='creatorimg' src={item.creatorimg} alt="" />
-                    <span className='text-sm font-semibold heading'> {item.creator}</span>
-                    <div className="time flex items-center gap-1">
-                      <FaRegEye />
-                      {item.review}
-                      <IoTimeOutline />
-                      {item.time}
+          {filteredBlogs && filteredBlogs.filter(item => item.blog === 0)
+            .map((item, index) => (
+              <NavLink to={`/blogs/${item.id}`} key={index}>
+                <div style={{minHeight:"580px"}} className='blog flex flex-col bg-white rounded-md' key={index}>
+                  <div className="blog-image rounded-md">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="card-body flex flex-col gap-3 px-6 py-7">
+                    <h1 className='heading font-bold text-xl'>{item.title}</h1>
+                    <p className='font-lg'>{item.description}</p>
+                    <div className='flex gap-2 items-center'>
+                      <img className='creatorimg' src={item.creatorimg} alt="" />
+                      <span className='text-sm font-semibold heading'> {item.creator}</span>
+                      <div className="time flex items-center gap-1">
+                        <FaRegEye />
+                        {item.review}
+                        <IoTimeOutline />
+                        {item.time}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </NavLink>
-          ))}
+              </NavLink>
+            ))}
         </div>
       </div>
     </div>

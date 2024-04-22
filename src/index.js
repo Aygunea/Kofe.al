@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
@@ -13,6 +12,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Faq from './Components/Faq/Faq';
 import User from './Components/User/User';
 import Blog from './Components/Blog/Blog';
+import './index.css';
 
 const router = createBrowserRouter([
   {

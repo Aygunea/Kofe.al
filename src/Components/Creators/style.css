@@ -1,4 +1,4 @@
-.creators-image-wrapper {
+.creators-image-wrapper{
     background: linear-gradient(90deg, #B2BFF9, #E5CEF8) !important;
     min-height: 450px;
 }
@@ -28,7 +28,7 @@
     bottom: -40px;
     width: 90%;
 }
-.creators-content input{
+.creators-input{
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border: 1px solid #eaeaea;

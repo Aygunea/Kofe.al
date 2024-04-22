@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Users from '../Users/Users';
-import { CgSearch } from "react-icons/cg";
-import './style.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from '../../Slice/UsersSlice';
+import { setSearchText, setCategory, filterItems } from '../../Slice/FilterSlice';
 import { AiOutlineCaretDown } from "react-icons/ai";
-
+import './style.css'
 const Creators = () => {
   const dispatch = useDispatch();
-  const [searchText, setSearchText] = useState('');
-  const users = useSelector(state => state.users.items);
+  const { searchText, category, filteredItems } = useSelector(state => state.filter);
   const [isOpen, setIsOpen] = useState(false);
+
   const options = [
     { value: 'hamısı', label: 'Hamısı' },
     { value: 'idman', label: 'İdman' },
@@ -20,52 +19,34 @@ const Creators = () => {
     { value: 'incesenet', label: 'İncəsənət' },
     { value: 'video-yaradiciliq', label: 'Video-yaradıcılıq' }
   ];
-  const [filteredUsers, setFilteredUsers] = useState([]);
-  const [selectedOption, setSelectedOption] = useState(options[0]);
-
 
   useEffect(() => {
-    dispatch(fetchUsers());
-  }, [dispatch]);
+    dispatch(fetchUsers()).then((action) => {
+      dispatch(filterItems({ searchText, category, items: action.payload }));
+    });
+  }, [dispatch, searchText, category]);
 
-  useEffect(() => {
-    setFilteredUsers(users); // Kullanıcılar alındığında filteredUsers'ı güncelle
-  }, [users]);
-
-  const handleSearch = (event) => {
-    setSearchText(event.target.value);
-    setFilteredUsers(filterUsers(event.target.value, selectedOption ? selectedOption.value : null));
-  };
-
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    setIsOpen(false);
-    setFilteredUsers(filterUsers(searchText, option.value));
-  };
-
-  const filterUsers = (searchText, category) => {
-    let filtered = users;
-    if (searchText) {
-      filtered = filtered.filter(user =>
-        user.title.toLowerCase().includes(searchText.toLowerCase())
-      );
-    }
-    if (category && category !== 'hamısı') {
-      filtered = filtered.filter(user => user.category === category);
-    }
-    return filtered;
+  const handleSearchChange = (e) => {
+    dispatch(setSearchText(e.target.value));
   };
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleOptionClick = (option) => {
+    dispatch(setCategory(option.value));
+    setIsOpen(false);
+  };
+
   const getUserCountByCategory = (category) => {
     if (category === 'hamısı') {
-      return users.length;
+      return filteredItems.length;
     } else {
-      return users.filter(user => user.category === category).length;
+      return filteredItems.filter(user => user.category === category).length;
     }
   };
+
   return (
     <div>
       <div className='creators-image-wrapper section-gap relative'>
@@ -74,7 +55,7 @@ const Creators = () => {
             <h1 className='text-black font-bold text-5xl'>Üzvlərimiz</h1>
             <a href='#' className="badge heading">
               <div className="image">🎉</div>
-              {filteredUsers.length} Yaradıcı
+              {filteredItems.length} Yaradıcı
             </a>
           </div>
           <p className='heading'>Siz də öz yaradıcılıq fəaliyyətinizdən qazanan şəxslərdən olun.</p>
@@ -83,17 +64,13 @@ const Creators = () => {
               <button
                 onClick={toggleDropdown}
                 type="button"
-                className="inline-flex w-full gap-x-1.5 rounded-md text-sm focus:outline-none"
+                style={{"borderRight":"1px solid #eaeaea"}}
+                className="inline-flex justify-between items-center pr-5 w-full text-sm focus:outline-none"
                 aria-expanded={isOpen}
                 aria-haspopup="true"
               >
-                {selectedOption && (
-                  <div className='flex items-center justify-between gap-1 pr-6' style={{ "width": "100%",borderRight:"1px solid #eaeaea" }}>
-                    {selectedOption.label}
-                    <AiOutlineCaretDown />
-                  </div>
-                )}
-
+                {category === 'hamısı' ? 'Hamısı' : options.find(opt => opt.value === category)?.label}
+                <AiOutlineCaretDown />
               </button>
               {isOpen && (
                 <div
@@ -118,15 +95,15 @@ const Creators = () => {
               )}
             </div>
             <div className="flex relative" style={{ "width": "90%" }}>
-              <input type="search" placeholder='Axtar...' value={searchText} onChange={handleSearch} />
+              <input type="search" className='creators-input' placeholder='Axtar...' value={searchText} onChange={handleSearchChange} />
               <span className='absolute right-5 top-3'>
-                {/* <CgSearch /> */}
               </span>
             </div>
           </div>
+
         </div>
       </div>
-      <Users filteredUsers={filteredUsers} />
+      <Users filteredUsers={filteredItems} />
     </div>
   );
 };
