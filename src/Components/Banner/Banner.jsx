@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { FaArrowRight } from "react-icons/fa6";
 import './banner.css';
 
 const Banner = () => {
-    const texts=[
+    const texts = useRef([
         "Video çək",
         "Kitab yaz",
         "İdman et",
         "Öyrədərək",
         "Danışaraq",
         "Rəsm çək"
-    ]
-    
+    ]);
+
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+            setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.current.length);
         }, 2000);
         return () => clearInterval(interval);
-    }, []);
-    
+    }, []); // Dependency array boş qalmalıdır, çünki texts dəyişməyəcək.
+
     return (
         <div className='banner flex justify-center items-center'>
             <div className="container-x flex items-center justify-center flex-col text-center gap-6">
@@ -30,7 +30,7 @@ const Banner = () => {
                     Global
                 </div>
                 <h1 className="title">
-                    <span className='theme-gradient text-slide-up'>{texts[currentTextIndex]}</span>
+                    <span className='theme-gradient text-slide-up'>{texts.current[currentTextIndex]}</span>
                     <span className='heading'> , sevdiyin işlə məşğul ol,  izləyicilərindən dəstək qazan! </span>
                 </h1>
                 <form action="#">
