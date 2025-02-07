@@ -42,9 +42,9 @@ const Creators = () => {
 
   const getUserCountByCategory = (category) => {
     if (category === 'hamısı') {
-      return filteredItems.length;
+      return filteredItems?.length;
     } else {
-      return filteredItems.filter(user => user.category === category).length;
+      return filteredItems.filter(user => user.category === category)?.length;
     }
   };
 
