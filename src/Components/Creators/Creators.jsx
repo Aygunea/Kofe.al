@@ -53,7 +53,7 @@ const Creators = () => {
         <div className="container-x gap-4 flex justify-center flex-col">
           <div className='flex gap-3 items-center mt-4'>
             <h1 className='text-black font-bold text-5xl'>Üzvlərimiz</h1>
-            <a href='#' className="badge heading">
+            <a href='#' className="badge heading text-[10px] md:text-base">
               <div className="image">🎉</div>
               {filteredItems.length} Yaradıcı
             </a>

@@ -20,8 +20,8 @@ const filterSlice = createSlice({
 
       if (searchText) {
         filtered = filtered.filter(item =>
-          item.title.toLowerCase().includes(searchText.toLowerCase()) || 
-          item.description.toLowerCase().includes(searchText.toLowerCase()) 
+          item.title?.toLowerCase().includes(searchText?.toLowerCase()) || 
+          item.description?.toLowerCase().includes(searchText?.toLowerCase()) 
         );
       }
       if (category && category !== 'hamısı') {

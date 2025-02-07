@@ -29,7 +29,7 @@ function Header() {
     <div className='container-x'>
        {isOpen && <div className="overlay" onClick={closeMenu}></div>}
       <nav className={isOpen ? "navbar active" : "navbar"}>
-        <div className="navbar-container">
+        <div className="w-full flex p-[0 20px] justify-start md:items-center md:justify-between">
           <div className="navbar-logo">
             <NavLink to="/home">
               <img src={logo} alt="" />
