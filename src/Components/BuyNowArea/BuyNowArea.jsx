@@ -1,7 +1,7 @@
-import React from 'react'
 import { GoArrowRight } from "react-icons/go";
 import map from '../../assets/images/map.webp'
 import './buynowarea.css'
+import { Link } from 'react-router-dom';
 const BuyNowArea = () => {
     return (
         <div className='buynowarea'>
@@ -12,10 +12,10 @@ const BuyNowArea = () => {
                     </div>
                     <h2 className='text-white	'>Yaradıcı Şəxslər üçün unikal dəstək platforma.</h2>
                     <h4 className='text-white'>Yarat 🎉 Paylaş 🚀 Qazan ☕</h4>
-                    <a href="#" className='bg-white rounded-md	flex items-center justify-center heading font-medium'>
+                    <Link to="/" className='bg-white rounded-md	flex items-center justify-center heading font-medium'>
                         Qeydiyyat
                         <GoArrowRight />
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

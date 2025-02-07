@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import './style.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBlogs } from '../../Slice/BlogsSlice';
 import { FaRegEye } from "react-icons/fa";
@@ -97,41 +97,41 @@ const Blog = () => {
                         “Adını bilirəm” deyən Ayan üçün yeni mərhələ başlayır. “Böyük ehtimal, növbəti bazar günü kafeyə qayıdacaqlar” - deyib işlərinə davam edir. Üzünə təbəssüm qayıdır.
                     </p>
                     <div className="flex gap-2 py-4 px-2 my-6 bg-white" style={{ "border": "2px dashed #e6e3f1", "width": "100%" }}>
-                        <a href="#" className="social-btn flex gap-4 items-center">
+                        <Link to="/" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/facebook-white.svg" alt="" />
                             <span style={{ "color": "#4267B2" }}>Paylaş</span>
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/messenger-white.svg" alt="" />
                             <span style={{ "color": "#448AFF" }}>Paylaş</span>
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/whatsapp-white.svg" alt="" />
                             <span style={{ "color": "#25d366" }}>Paylaş</span>
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/twitter-white.svg" alt="" />
                             <span style={{ "color": "#000" }}>Tweet</span>
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/telegram-white.svg" alt="" />
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/linkedin-white.svg" alt="" />
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/odnoklassniki-white.svg" alt="" />
-                        </a>
-                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
+                        </Link>
+                        <Link to="/" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/vk-white.svg" alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="social-icons py-4" style={{ "gap": "10px", "borderBottom": "1px solid #eaeaea" }}>
-                        <a href="#"><TbBrandFacebook /></a>
-                        <a href="#"> <FaInstagram /></a>
-                        <a href="#"> <FiLinkedin /></a>
-                        <a href="#"><PiTiktokLogo /></a>
-                        <a href="#"> <FaGlobe /></a>
+                        <Link to="/"><TbBrandFacebook /></Link>
+                        <Link to="/"> <FaInstagram /></Link>
+                        <Link to="/"> <FiLinkedin /></Link>
+                        <Link to="/"><PiTiktokLogo /></Link>
+                        <Link to="/"> <FaGlobe /></Link>
                     </div>
                 </div>
             </div>

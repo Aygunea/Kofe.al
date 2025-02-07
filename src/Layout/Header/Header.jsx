@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from '../../assets/images/logo.webp'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { IoCloseSharp } from "react-icons/io5";
 import './header.css';
@@ -50,13 +50,13 @@ function Header() {
             </ul>
             <div className='navbar-end flex gap-4 items-center'>
               <div className="dropdown-menu" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <a href="#" className='flex items-center gap-1'>
+                <Link to="/" className='flex items-center gap-1'>
                   <img src="https://kofe.al/assets/images/icons/az.png" alt="" />
                   <span className="menu-item">Azərbaycan</span>
                   <span>
                     {hovered ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </span>
-                </a>
+                </Link>
                 <ul className="dropdown-submenu">
                   <li className='flex items-center gap-1'>
                     <img src="https://kofe.al/assets/images/icons/en.png" alt="" />

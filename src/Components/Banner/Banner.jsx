@@ -3,14 +3,15 @@ import { FaArrowRight } from "react-icons/fa6";
 import './banner.css';
 
 const Banner = () => {
-    const [texts, setTexts] = useState([
+    const texts=[
         "Video çək",
         "Kitab yaz",
         "İdman et",
         "Öyrədərək",
         "Danışaraq",
         "Rəsm çək"
-    ]);
+    ]
+    
     const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
     useEffect(() => {
@@ -18,8 +19,8 @@ const Banner = () => {
             setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
         }, 2000);
         return () => clearInterval(interval);
-    }, [texts]);
-
+    }, []);
+    
     return (
         <div className='banner flex justify-center items-center'>
             <div className="container-x flex items-center justify-center flex-col text-center gap-6">

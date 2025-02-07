@@ -5,6 +5,7 @@ import { fetchUsers } from '../../Slice/UsersSlice';
 import { setSearchText, setCategory, filterItems } from '../../Slice/FilterSlice';
 import { AiOutlineCaretDown } from "react-icons/ai";
 import './style.css'
+import { Link } from 'react-router-dom';
 const Creators = () => {
   const dispatch = useDispatch();
   const { searchText, category, filteredItems } = useSelector(state => state.filter);
@@ -53,10 +54,10 @@ const Creators = () => {
         <div className="container-x gap-4 flex justify-center flex-col">
           <div className='flex gap-3 items-center mt-4'>
             <h1 className='text-black font-bold text-5xl'>Üzvlərimiz</h1>
-            <a href='#' className="badge heading text-[10px] md:text-base">
+            <Link to="/" className="badge heading text-[10px] md:text-base">
               <div className="image">🎉</div>
               {filteredItems.length} Yaradıcı
-            </a>
+            </Link>
           </div>
           <p className='heading'>Siz də öz yaradıcılıq fəaliyyətinizdən qazanan şəxslərdən olun.</p>
           <div className="creators-content absolute bg-white flex items-center justify-center">
