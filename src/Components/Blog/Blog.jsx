@@ -97,32 +97,32 @@ const Blog = () => {
                         “Adını bilirəm” deyən Ayan üçün yeni mərhələ başlayır. “Böyük ehtimal, növbəti bazar günü kafeyə qayıdacaqlar” - deyib işlərinə davam edir. Üzünə təbəssüm qayıdır.
                     </p>
                     <div className="flex gap-2 py-4 px-2 my-6 bg-white" style={{ "border": "2px dashed #e6e3f1", "width": "100%" }}>
-                        <a className="social-btn flex gap-4 items-center">
+                        <a href="#" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/facebook-white.svg" alt="" />
                             <span style={{ "color": "#4267B2" }}>Paylaş</span>
                         </a>
-                        <a className="social-btn flex gap-4 items-center">
+                        <a href="#" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/messenger-white.svg" alt="" />
                             <span style={{ "color": "#448AFF" }}>Paylaş</span>
                         </a>
-                        <a className="social-btn flex gap-4 items-center">
+                        <a href="#" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/whatsapp-white.svg" alt="" />
                             <span style={{ "color": "#25d366" }}>Paylaş</span>
                         </a>
-                        <a className="social-btn flex gap-4 items-center">
+                        <a href="#" className="social-btn flex gap-4 items-center">
                             <img src="https://platform-cdn.sharethis.com/img/twitter-white.svg" alt="" />
                             <span style={{ "color": "#000" }}>Tweet</span>
                         </a>
-                        <a className="social-btn flex gap-4 items-center st-btn">
+                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/telegram-white.svg" alt="" />
                         </a>
-                        <a className="social-btn flex gap-4 items-center st-btn">
+                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/linkedin-white.svg" alt="" />
                         </a>
-                        <a className="social-btn flex gap-4 items-center st-btn">
+                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/odnoklassniki-white.svg" alt="" />
                         </a>
-                        <a className="social-btn flex gap-4 items-center st-btn">
+                        <a href="#" className="social-btn flex gap-4 items-center st-btn">
                             <img src="https://platform-cdn.sharethis.com/img/vk-white.svg" alt="" />
                         </a>
                     </div>
